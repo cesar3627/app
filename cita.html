@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitar Cita - Clínica Dental</title>
+    <link rel="stylesheet" href="cita.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+    <!-- Barra de Navegación -->
+    <div class="navbar">
+        <!-- Logo -->
+        <img src="logo.png" alt="Logo" class="logo">
+        
+        <!-- Menú -->
+        <div class="menu">
+            <a href="index.html">Inicio</a>
+            <a href="nosotros.html">Sobre Nosotros</a>
+            <a href="servicios.html">Servicios</a>
+            <a href="cita.html">Apartar cita</a>
+            <a href="ver_citas.php">listado citas</a>
+        </div>
+    </div>
+
+    <!-- Sección de Solicitud de Cita -->
+    <section class="solicitar-cita">
+        <div class="form-container">
+            <h1>Solicita tu Cita</h1>
+            <form action="registrar_cita.php" method="POST">
+                <label for="nombre_paciente">Nombre del Paciente:</label><br>
+                <input type="text" id="nombre_paciente" name="nombre_paciente" required><br><br>
+        
+                <label for="telefono">Teléfono:</label><br>
+                <input type="tel" id="telefono" name="telefono"><br><br>
+        
+                <label for="correo">Correo Electrónico:</label><br>
+                <input type="email" id="correo" name="correo"><br><br>
+        
+                <label for="tratamiento">Tratamiento:</label><br>
+                <select id="tratamiento" name="tratamiento" required>
+                    <option value="Implantología">Implantología</option>
+                    <option value="Ortodoncia Adultos">Ortodoncia Adultos</option>
+                    <option value="Ortodoncia Niños">Ortodoncia Niños</option>
+                    <option value="Extracciones Dentales">Extracciones Dentales</option>
+                </select><br><br>
+        
+                <label for="fecha">Fecha de la Cita:</label><br>
+                <input type="date" id="fecha" name="fecha" required><br><br>
+        
+                <label for="hora">Hora de la Cita:</label><br>
+                <input type="time" id="hora" name="hora" required><br><br>
+        
+                <label for="notas">Notas Adicionales:</label><br>
+                <textarea id="notas" name="notas"></textarea><br><br>
+        
+                <input type="submit" value="Registrar Cita">
+            </form>
+        </div>
+    </section>
+
+</body>
+</html>

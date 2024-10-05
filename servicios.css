@@ -1,0 +1,136 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.navbar {
+    background-color: #009dff;
+    overflow: hidden;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    height: 50px; /* Ajusta el tamaño del logo según sea necesario */
+}
+
+.menu {
+    display: flex;
+}
+
+.menu a {
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    background-color: #575757;
+}
+
+header.inicio {
+    background: url('banner.jpg') no-repeat center center/cover;
+    color: rgb(37, 37, 37);
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.inicio-contenido {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.inicio h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+.inicio p {
+    font-size: 1.2em;
+    margin: 20px 0;
+}
+
+.cta-button {
+    background-color: #007bff;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+}
+
+.imagenes-con-texto {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.contenedor {
+    position: relative;
+    width: 200px;
+}
+
+.contenedor img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.texto {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.informacion {
+    display: none;
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.informacion:target {
+    display: block;
+}
+
+.informacion h2 {
+    margin-top: 0;
+}
+
+.cerrar {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1em;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.cerrar:hover {
+    background-color: #0056b3;
+}

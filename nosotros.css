@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.navbar {
+    background-color: #009dff;
+    overflow: hidden;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;  /* Fijar la barra de navegación */
+    top: 0;           /* Mantener la barra en la parte superior */
+    width: 100%;      /* Asegurarse de que ocupe todo el ancho de la pantalla */
+    z-index: 1000;    /* Asegurar que esté por encima de otros elementos */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);  /* Añadir una ligera sombra para destacar la barra */
+}
+
+body {
+    padding-top: 70px; /* Agregar un margen superior para evitar que el contenido quede debajo del menú */
+}
+
+.logo {
+    height: 50px;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu a {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    background-color: #575757;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    margin-top: 30px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2.5em;
+    color: #333;
+}
+
+h2 {
+    color: #009dff;
+    margin-bottom: 10px;
+    font-size: 1.8em;
+}
+
+p {
+    font-size: 1.1em;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+
